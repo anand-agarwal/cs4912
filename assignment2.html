@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">ASSIGNMENTS</div>
+        </div>
+    </nav>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Assignments</a>
+        <header class="hero-section">
+            <h1 class="assignment-title">ASSIGNMENT 2</h1>
+            <p class="assignment-subtitle">View and interact with assignment cards. Each card supports upvoting and downvoting with persistent vote tracking.</p>
+        </header>
+        <main class="cards-container" id="cardsContainer">
+            <div class="card" data-card-id="card-1">
+                <h3 class="card-title">Card 1</h3>
+                <p class="card-content">This is the first card for Assignment 2. You can upvote or downvote this card.</p>
+                <div class="vote-section">
+                    <button class="vote-button upvote" onclick="vote('card-1', 'up')">↑ Upvote</button>
+                    <span class="vote-count" id="count-card-1">0</span>
+                    <button class="vote-button downvote" onclick="vote('card-1', 'down')">↓ Downvote</button>
+                </div>
+            </div>
+            <div class="card" data-card-id="card-2">
+                <h3 class="card-title">Card 2</h3>
+                <p class="card-content">This is the second card for Assignment 2. Each card maintains its own vote count.</p>
+                <div class="vote-section">
+                    <button class="vote-button upvote" onclick="vote('card-2', 'up')">↑ Upvote</button>
+                    <span class="vote-count" id="count-card-2">0</span>
+                    <button class="vote-button downvote" onclick="vote('card-2', 'down')">↓ Downvote</button>
+                </div>
+            </div>
+            <div class="card" data-card-id="card-3">
+                <h3 class="card-title">Card 3</h3>
+                <p class="card-content">This is the third card for Assignment 2. You can only vote once per card.</p>
+                <div class="vote-section">
+                    <button class="vote-button upvote" onclick="vote('card-3', 'up')">↑ Upvote</button>
+                    <span class="vote-count" id="count-card-3">0</span>
+                    <button class="vote-button downvote" onclick="vote('card-3', 'down')">↓ Downvote</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

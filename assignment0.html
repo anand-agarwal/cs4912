@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 0</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">CS-4912</div>
+        </div>
+    </nav>
+    <div class="container fullscreen-container">
+        <a href="index.html" class="back-link">← Back to Assignments</a>
+        <header class="hero-section">
+            <h1 class="assignment-title">ASSIGNMENT 0</h1>
+            <p class="assignment-subtitle">View and interact with assignment cards. Each card supports upvoting and downvoting with persistent vote tracking.</p>
+        </header>
+        <main class="cards-container fullscreen-cards" id="cardsContainer">
+            <div class="card fullscreen-card" data-card-id="card-1">
+                <h3 class="card-title">Question 1</h3>
+                <div class="card-images">
+                    <img src="assignment0/q1/IMG_20260128_210532(1).jpeg" alt="Question 1 Image 1" />
+                    <img src="/Users/anandagarwal/cs4912/assignment0/q1/1000146725.jpeg" alt="Question 1 Image 2" />
+                </div>
+                <div class="vote-section">
+                    <button class="vote-button upvote" onclick="vote('card-1', 'up')">↑ Upvote</button>
+                    <span class="vote-count" id="count-card-1">0</span>
+                    <button class="vote-button downvote" onclick="vote('card-1', 'down')">↓ Downvote</button>
+                </div>
+            </div>
+            <div class="card fullscreen-card" data-card-id="card-2">
+                <h3 class="card-title">Question 2</h3>
+                <div class="card-images">
+                    <img src="assignment0/q2/IMG_20260128_214650.jpeg" alt="Question 2 Image 1" />
+                    <img src="assignment0/q2/IMG_20260128_214717.jpeg" alt="Question 2 Image 2" />
+                </div>
+                <div class="vote-section">
+                    <button class="vote-button upvote" onclick="vote('card-2', 'up')">↑ Upvote</button>
+                    <span class="vote-count" id="count-card-2">0</span>
+                    <button class="vote-button downvote" onclick="vote('card-2', 'down')">↓ Downvote</button>
+                </div>
+            </div>
+            <div class="card fullscreen-card" data-card-id="card-3">
+                <h3 class="card-title">Question 3</h3>
+                <div class="card-images">
+                    <img src="assignment0/q3/IMG_20260128_215834.jpeg" alt="Question 3 Image 1" />
+                    <img src="assignment0/q3/IMG_20260128_220018.jpeg" alt="Question 3 Image 2" />
+                </div>
+                <div class="vote-section">
+                    <button class="vote-button upvote" onclick="vote('card-3', 'up')">↑ Upvote</button>
+                    <span class="vote-count" id="count-card-3">0</span>
+                    <button class="vote-button downvote" onclick="vote('card-3', 'down')">↓ Downvote</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
